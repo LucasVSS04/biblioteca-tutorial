@@ -1,14 +1,14 @@
 import { expect, test } from "bun:test";
-import { CorrigirTitulo } from "../src/modules/acervo/features/corrigir-titulo/CorrigirTitulo";
-import { RegistrarAvaliacao } from "../src/modules/avaliacoes/features/registrar-avaliacao/RegistrarAvaliacao";
-import { Livro } from "../src/modules/acervo/domain/Livro";
-import { Isbn } from "../src/modules/acervo/domain/Isbn";
-import { NumeroRegistro } from "../src/modules/acervo/domain/NumeroRegistro";
-import { AutorId, AvaliacaoId, LivroId } from "../src/shared/identifiers";
-import type { LivroRepository } from "../src/modules/acervo/domain/LivroRepository";
-import type { Avaliacao } from "../src/modules/avaliacoes/domain/Avaliacao";
-import type { AvaliacaoRepository } from "../src/modules/avaliacoes/domain/AvaliacaoRepository";
-import type { ConsultaDeAcervo } from "../src/modules/avaliacoes/domain/ConsultaDeAcervo";
+import { CorrigirTitulo } from "../../src/modules/acervo/features/corrigir-titulo/CorrigirTitulo";
+import { RegistrarAvaliacao } from "../../src/modules/avaliacoes/features/registrar-avaliacao/RegistrarAvaliacao";
+import { Livro } from "../../src/modules/acervo/domain/Livro";
+import { Isbn } from "../../src/modules/acervo/domain/Isbn";
+import { NumeroRegistro } from "../../src/modules/acervo/domain/NumeroRegistro";
+import { AutorId, AvaliacaoId, LivroId } from "../../src/shared/identifiers";
+import type { LivroRepository } from "../../src/modules/acervo/domain/LivroRepository";
+import type { Avaliacao } from "../../src/modules/avaliacoes/domain/Avaliacao";
+import type { AvaliacaoRepository } from "../../src/modules/avaliacoes/domain/AvaliacaoRepository";
+import type { ConsultaDeAcervo } from "../../src/modules/avaliacoes/domain/ConsultaDeAcervo";
 
 class LivroRepo implements LivroRepository {
   constructor(private items: Livro[]) {}
